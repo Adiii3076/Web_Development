@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone_book</title>
+  <link rel="stylesheet" href="phn.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+</head>
+ <!-- Navbar Section -->
+ <nav class="navbar">
+  <div class="navbar_container">
+      <a href="#home" id="navbar_logo">PhoneBook Application</a>
+      <!-- <img src="Images/wallpaper.png"> -->
+      <div class="navbar_toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+      <ul class="navbar_menu">
+          <li class="navbar_item">
+              <a href="#group" class="navbar_links" id="home-page">Group Members</a>
+          </li>
+         
+          <li class="navbar_btn">
+              <a href="#details" class="button" id="info">Details</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+<!-- details section -->
+<div class="main" id="details">
+  <div class="main_container">
+      <div class="main_content">
+          <h1>Java Programing </h1>
+          <h2>Micro Project</h2>
+          <p>Let's Starts</p>
+          <button class="main_btn" data-toggle="modal" data-target="#exampleModalCenter" ><a href="#modal">Details</a></button>
+  </div>
+</div>
+<div class="hero" id="group">
+    <div class="hero_container">
+        <h1 class="hero_heading">Group Members<span> Java Programing</span></h1>
+        <h2 class="hero_member">Shubham Mehta 1901480141</h2>
+        <h3 class="hero_member">Aditya Nevase 1901480123</h3>
+        <h4 class="hero_member">Samarth Bhagane 1901480154</h4>
+        <h5 class="hero_member">Rohit Patel 1901480151</h5>
+    </div>
+</div>
+<div class="main__img--container">
+    <div class="main__img--card" id="card-2"><i class=" fas fa-users"> </i></div>
+
+</div>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="myForm">
+                        <div class="form-group">
+                            <label class="col-form-label">Name:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Mobile:</label>
+                            <input type="text" class="form-control" id="mobile">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+</body>
+</html>
